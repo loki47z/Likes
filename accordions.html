@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/accordions.css">
+    <title>Accordions</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <h1>Welcome Everyone</h1>
+        <div class="topnav" id="topnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="menu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <!--Accordions-->
+    <section>
+        <button class="accordion">Manager Hall Of Fame</button>
+        <div class="panel">
+            <div class="card">
+                <img src="media/Mourinho.jpg" alt="">
+                <div>
+                    <h1>The Special One</h1>
+                    <p>Jose Mourinho</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="media/Pep.jpg" alt="">
+                <div>
+                    <h1>The Tactial Genius</h1>
+                    <p>Pep Josep Guardiola</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="media/Carlo.jpg" alt="">
+                <div class="">
+                    <h1>The UCL King</h1>
+                    <p>Carlo Ancelloti</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="media/Diego.jpg" alt="">
+                <div>
+                    <h1>The Master of Dark Arts</h1>
+                    <p>Diego Simeone</p>
+                </div>
+            </div>
+        </div>
+        <button class="accordion">F1 Cars</button>
+        <div class="panel">
+            <div class="slideshow">
+                <div class="slides fade">
+                    <div class="number">1 / 3</div>
+                    <img src="media/SF-25#.jpg" alt="">
+                    <div class="text">Ferrari</div>
+                </div>
+                <div class="slides fade">
+                    <div class="number">2 / 3</div>
+                    <img src="media/RB21.jpg" alt="">
+                    <div class="text">Red Bull</div>
+                </div>
+                <div class="slides fade">
+                    <div class="number">3 / 3</div>
+                    <img src="media/w13.jpg" alt="">
+                    <div class="text">Mercedes AMG</div>
+                </div>
+            </div>
+            
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi odit perferendis maiores officia corrupti exercitationem placeat quam natus iusto eius vel corporis quos, laborum beatae provident sint nisi quo vitae!</p>
+        </div>
+    </section>
+    <script src="scripts/accord.js"></script>
+</body>
+</html>
