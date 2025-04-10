@@ -4,21 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/icon_bar.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="styles/accordions.css">
+    <title>Accordions</title>
 </head>
 <body>
-    <div class="iconbar">
-        <a href="#" class="active"><i class="fa fa-home"></i></a>
-        <a href="#"><i class="fa fa-search"></i></a>
-        <a href="accordions.html"><i class="fa fa-envelope"></i></a>
-        <a href="#"><i class="fa fa-globe"></i></a>
-        <div id="menu" onclick="thom(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+    <!--Header-->
+    <header>
+        <h1>Welcome Everyone</h1>
+        <div class="topnav" id="topnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="menu()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-    </div>
-    <script src="scripts/menu.js"></script>
+    </header>
+    <!--Accordions-->
+    <section>
+        <button class="accordion">Manager Hall Of Fame</button>
+        <div class="panel">
+            <div class="card">
+                <img src="media/Mourinho.jpg" alt="">
+                <div>
+                    <h1>The Special One</h1>
+                    <p>Jose Mourinho</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="media/Pep.jpg" alt="">
+                <div>
+                    <h1>The Tactial Genius</h1>
+                    <p>Pep Josep Guardiola</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="media/Carlo.jpg" alt="">
+                <div class="">
+                    <h1>The UCL King</h1>
+                    <p>Carlo Ancelloti</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="media/Diego.jpg" alt="">
+                <div>
+                    <h1>The Master of Dark Arts</h1>
+                    <p>Diego Simeone</p>
+                </div>
+            </div>
+        </div>
+        <button class="accordion">F1 Cars</button>
+        <div class="panel">
+            <div class="slideshow w3-content w3-section">
+                <img class="mySlides" src="media/SF-25.jpg" alt="">
+                <img class="mySlides" src="media/RB21.jpg" alt="">
+                <img class="mySlides" src="media/w13.jpg" alt="">
+            </div>
+            
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <button class="accordion">Section 3</button>
+        <div class="panel" id="timeline">
+            <div class="container left">
+                <div class="content">
+                    <h2>2025</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure beatae vitae tenetur, velit optio laborum non delectus ut quis incidunt ipsum cumque hic maxime quo nesciunt nobis distinctio illum error.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>2025</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure beatae vitae tenetur, velit optio laborum non delectus ut quis incidunt ipsum cumque hic maxime quo nesciunt nobis distinctio illum error.</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>2025</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure beatae vitae tenetur, velit optio laborum non delectus ut quis incidunt ipsum cumque hic maxime quo nesciunt nobis distinctio illum error.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>2025</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure beatae vitae tenetur, velit optio laborum non delectus ut quis incidunt ipsum cumque hic maxime quo nesciunt nobis distinctio illum error.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="scripts/accord.js"></script>
 </body>
 </html>
